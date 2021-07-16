@@ -1,0 +1,111 @@
+.step 
+  flex-basis: 20%
+  text-align: center 
+  position: relative
+  &:after
+    content: ''
+    position: absolute
+    top: -11px 
+    right: -16%
+    width: 72px
+    height: 25px
+    background: url('../img/steps/arrow.svg') no-repeat center 
+  &:last-child
+    &:after
+      display: none
+  &__image 
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100px 
+    height: 100px
+    margin: auto
+    margin-bottom: 28px
+    border: 3px solid $main-color
+    border-radius: 50%
+  &__text 
+    margin: auto
+    font-size: 14px
+    line-height: 19px
+  &s 
+    &__title 
+      max-width: 57%
+      margin: auto
+      text-align: center
+      margin-top: -19px
+      margin-bottom: 51px
+      font-size: 30px
+      line-height: 45px
+    &__subtitle 
+      margin-bottom: 68px
+      text-align: center
+      font-size: 19.5px
+    &-block 
+      display: flex
+      flex-wrap: wrap
+@media (max-width: 1200px)
+  .step 
+    margin-bottom: 30px
+    flex-basis: 50%
+    &:after 
+      display: none 
+    &s 
+      &-block 
+        justify-content: center
+      &__title 
+        max-width: 71%
+@media (max-width: 992px)
+  .step 
+    &s 
+      &__title 
+        max-width: 90%
+@media (max-width: 768px)
+  .step 
+    margin-bottom: 30px
+    &:after 
+      display: none 
+    &s 
+      &-block 
+        flex-direction: column
+      &__title 
+        max-width: 80%
+        font-size: 19px
+      &__subtitle 
+        font-size: 14px
+@media (max-width: 567px)
+  .step 
+    &s 
+      &__title 
+        max-width: 89%
+        line-height: 2
+        letter-spacing: -0.5px
+@media (max-width: 420px)
+  .step
+    &__image 
+      margin-right: 89px
+      margin-bottom: -7px
+    &__text 
+      margin-top: 36px
+      line-height: 140%
+      font-size: 12px
+    &:nth-child(1)
+      top: 2px
+    &:nth-child(2)
+      top: -9px
+    &:nth-child(3)
+      top: -11px
+    &:nth-child(4)
+      top: -15px
+    &:nth-child(5)
+      top: -19px
+    &s
+      &__title 
+        max-width: 100%
+        margin-top: -101px
+        margin-bottom: 24px
+        padding-right: 2px
+        line-height: 1.2
+      &__subtitle
+        margin-bottom: 32px
+        text-align: center
+        font-size: 14px

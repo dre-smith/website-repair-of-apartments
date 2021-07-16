@@ -1,0 +1,128 @@
+.offer
+  background: url('../img/offer/offer-bg.png') no-repeat
+  background-position: center right
+  background-size: contain
+  position: relative
+  &:before
+    content: ''
+    width: 50%
+    height: 100%
+    top: 0
+    left: 0
+    background: #ffffff
+    position: absolute
+  &-block 
+    width: 50%
+    padding-right: 90px
+    position: relative
+  &__title
+    margin-bottom: 17px
+    max-width: 360px
+    line-height: 36px
+    color: $text-color
+  &__subtitle 
+    max-width: 250px
+    margin-bottom: 31px
+    color: $text-color
+  &__input
+    width: 240px
+    margin-bottom: 30px
+    &:first-child
+      margin-right: 11px
+    &:nth-child(2)
+      padding-left: 31px
+  &__button
+    width: 100%
+    min-height: 70px
+    margin-bottom: 28px
+    font-family: 'Museo Sans Bold', sans-serif
+    font-weight: 700
+    color: $text-color
+  &__text
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-left: -2px
+    letter-spacing: -0.5px
+    color: $text-color
+  &__manager
+    width: 229px
+    line-height: 24px
+    color: $text-color
+  &__address
+    display: flex
+    margin-bottom: 7px
+    margin-right: 8px
+    color: $text-color
+  &__phone 
+    text-decoration: none
+    color: $text-color
+    font-family: 'Museo Sans Bold', sans-serif
+    font-weight: 700
+@media (max-width: 1200px)
+  .offer
+    background-size: cover
+    &__input 
+      width: 100%
+      margin-bottom: 10px
+    &__button 
+      font-size: 13px
+    &__text 
+      flex-direction: column
+      justify-content: center
+      align-items: flex-start
+      margin-left: 5px
+      font-family: 'Museo Sans Light', sans-serif
+      font-weight: 300
+      &__manager
+        margin-bottom: 7px
+@media (max-width: 992px)
+  .offer
+    &__button 
+      padding: 0 50px 0 50px
+@media (max-width: 768px)
+  .offer
+    background: #ffffff
+    &-block 
+      width: 100%
+      margin-top: 22px
+      padding-right: 0
+    &__title 
+      max-width: 520px
+      margin-right: 3px
+      font-size: 18px
+      line-height: 125%
+    &__subtitle 
+      max-width: 203px
+      font-size: 14px
+    &__manager
+      max-width: 239px
+      padding-bottom: 8px
+    &__button
+      font-size: 14px
+      margin-bottom: 23px
+      padding: 1px 49px 1px 51px
+    &__form
+      margin-top: -4px
+    &__input 
+      margin-bottom: 9px
+      padding-left: 21px
+      &:nth-child(2)
+        padding-left: 22px
+    &__address 
+      margin-bottom: 8px
+    &__text 
+      flex-direction: row
+      justify-content: space-between
+@media (max-width: 567px)
+  .offer 
+    &__text 
+      flex-direction: column
+      justify-content: center
+    &-block 
+      margin-bottom: -43px
+@media (max-width: 420px)
+  .offer
+    &__button 
+      width: 275px
+      min-height: 71px

@@ -1,0 +1,158 @@
+.modal
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  background-color: rgba(#000, 0.5)
+  display: none
+  z-index: 9999999
+  &_active
+    display: flex
+  &-dialog
+    position: relative
+    margin: auto
+    width: 570px
+    height: 691px
+    background-color: #ffffff
+    &__close 
+      position: absolute
+      top: 10px
+      right: 10px
+      font-size: 18px
+      background: $main-color
+      border: none
+      border-radius: 2px
+      &:active
+        border: 0
+        outline: 0
+  &__button 
+    width: 100%
+    padding: 26px 93px 26px 97px
+    margin-top: 30px
+    max-width: 370px
+    letter-spacing: 0.2px
+  &__address 
+    margin-top: 30px
+    margin-bottom: 10px
+    margin-left: -5px
+    font-size: 15px
+    line-height: 20px
+    width: 80%
+  &__phone 
+    font-size: 24px
+    line-height: 24px
+    margin-left: -3px
+    text-decoration: none
+    font-family: "Museo Sans Bold", sans-serif
+    font-weight: 700
+    display: inline-block
+    color: $text-color
+  &-block 
+    &__price 
+      padding: 73px 100px
+      display: flex
+      flex-direction: column
+      align-items: center
+      &>*
+        text-align: center
+        width: 100%
+    &__title 
+      font-weight: 700
+      margin-top: 0
+      text-align: center
+      font-size: 22px
+      line-height: 33px
+      padding-left: 9px
+      letter-spacing: 0.5px
+    &__subtitle 
+      margin-top: 7px
+      font-size: 16px
+      line-height: 35px
+      padding-left: 9px
+  &-input 
+    &__name
+      width: 100%
+      text-align: left
+      margin-top: 40px
+      padding-left: 24px
+      margin-bottom: 16px
+    &__phone
+      width: 100%
+      text-align: left
+      padding-left: 24px
+@media (max-width: 992px)
+  .modal
+    &-dialog
+      max-width: 530px
+      height: 365px
+    &-block 
+      &__price 
+        padding: 40px 20px
+      &__title 
+        width: 315px
+        margin-bottom: 0
+        line-height: 22px
+        font-size: 20px
+      &__subtitle 
+        margin-top: 0
+        padding-left: 0
+        font-size: 12px
+    &-input 
+      &__name 
+        max-width: 440px
+        margin-top: 0
+        margin-bottom: 10px
+        padding: 10px 26px
+      &__phone 
+        max-width: 440px
+        margin-top: 0
+        margin-bottom: 10px
+        padding: 10px 26px
+    &__button 
+      max-width: 440px
+      margin-top: 0
+      padding: 12px 0 12px 0
+      margin-top: 0
+      margin-right: 0
+      font-size: 14px
+      font-weight: 800
+    &__address 
+      margin-top: 10px
+      margin-bottom: 5px
+      margin-left: 0
+      font-size: 12px
+      line-height: 15px
+    &__phone 
+      margin-left: 0
+      font-size: 20px
+      line-height: 22px
+@media (max-width: 567px)
+  .modal 
+    &-dialog 
+      width: 400px
+      height: 365px
+    &-block 
+      &__price 
+        padding: 40px 20px
+@media (max-width: 420px)
+  .modal
+    &-dialog 
+      max-width: 320px
+      height: 365px
+    &-block 
+      &__title 
+        font-size: 18px
+      &__subtitle 
+        width: 100%
+      &__address 
+        font-size: 18px
+    &-input 
+      &__name 
+        width: 270px 
+      &__phone 
+        width: 270px
+    &__button 
+      width: 270px
+    &__phone 
+      margin-bottom: 35px

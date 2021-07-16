@@ -1,0 +1,96 @@
+.footer
+  position: relative
+.map
+  position: absolute
+  top: 0
+  left: 0
+  width: 50%
+  height: 640px
+.contacts
+  flex-basis: 50%
+  padding-top: 67px
+  padding-left: 210px
+  &-block 
+    display: flex
+    justify-content: flex-end
+  &__title
+    max-width: 323px
+    margin-bottom: 95px
+    line-height: 33px
+    font-size: 24px
+    font-weight: 700
+    font-family: 'Museo Sans Bold', sans-serif
+    letter-spacing: -1.1px
+  &-list
+    padding: 0
+    list-style: none
+    &__text
+      margin-top: -6px
+      line-height: 25px
+    &__strong
+      font-weight: 700
+      font-family: 'Museo Sans Bold', sans-serif
+    &__phone
+      text-decoration: none
+      color: $text-color
+    &__item 
+      display: flex
+      align-items: flex-start
+      margin-bottom: 30px
+      &:first-child
+        margin-bottom: 40px
+      &:nth-last-of-type(2)
+        margin-bottom: 36px
+    &__icon
+      width: 20px
+      height: 20px
+      margin-right: 23px
+      line-height: 20px
+      text-align: center
+      &-add
+        margin-right: 20px
+@media (max-width: 1200px)
+  .contacts
+    padding-left: 105px
+@media (max-width: 992px)
+  .footer 
+    display: flex
+    flex-direction: column-reverse
+  .map
+    position: relative
+    width: 100%
+    bottom: 0
+  .contacts
+    flex-basis: 100%
+    &__title
+      margin: 0 auto
+      margin-bottom: 39px
+    &-list
+      display: block
+      width: 323px
+      margin: 0 auto
+@media (max-width: 768px)
+  .contacts
+    padding: 0px
+    padding-top: 60px
+    padding-bottom: 25px
+    &__title
+      width: 272px
+      margin-bottom: 36px
+      line-height: 1.2
+      font-size: 19px
+      font-weight: 700
+      font-family: 'Museo Sans Bold', sans-serif
+      letter-spacing: -0.58px
+    &-list
+      width: 280px
+      padding-left: 0
+      padding-right: 0
+      &__icon 
+        margin-right: 14px
+    &__item 
+      margin-bottom: 35px
+      &:first-child
+        margin-bottom: 38px
+      &:nth-last-of-type(2)
+        margin-bottom: 37px
