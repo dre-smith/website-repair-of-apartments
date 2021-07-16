@@ -17,22 +17,16 @@
 				<div class="navbar__logo">
 				<a href ="#"><img src="img/logo.jpg" alt="Логотип"></a>
 				</div>
-				<!-- /.navbar__logo -->
 				<div class="navbar__info">
 					<div class="navbar__contacts">
 						<span class="navbar__address">Калуга, Москва, МО</span>
 						<a href="tel:+7(495)42-251-31" class="navbar__phone">+7 (495) 42-251-31</a>
 					</div>
-					<!-- /.navbar__contacts -->
 					<a href="http://andkuznetsov.ru"><button class="button navbar__button" id="button">Вернуться на главную</button></a>
 				</div>
-				<!-- /.navbar__info -->
 			</div>
-			<!-- /.navbar-block -->
 		</div>
-		<!-- /.container -->
 	</nav>
-	<!-- /.navbar -->
 	
 	<main>
 		<section class="hero">
@@ -62,17 +56,12 @@
 							</li>
 						</ul>
 					</div>
-					<!-- /.hero-list -->
 					<div class="hero-image">
 						<img src="img/hero/hero-image.png" alt="План квартиры">
 					</div>
-					<!-- /.hero-image -->
 				</div>
-				<!-- /.hero-block -->
 			</div>
-			<!-- /.container -->
 		</section>
-		<!-- /.hero -->
 	</main>
 
 </body>

@@ -1,9 +1,7 @@
 <?php
-// Файлы phpmailer
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';
 require 'phpmailer/Exception.php';
-// Переменные, которые отправляет пользователь
 $userName = $_POST['username'];
 $userPhone = $_POST['phone'];
 $userEmail = $_POST['email'];
@@ -13,27 +11,19 @@ try {
     $mail->isSMTP();   
     $mail->CharSet = "UTF-8";                                          
     $mail->SMTPAuth   = true;
-    // Настройки вашей почты
-    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера GMAIL
-    $mail->Username   = 'username1@gmail.com'; // Логин на почте
-    $mail->Password   = 'password'; // Пароль на почте
+    $mail->Host       = 'smtp.gmail.com';
+    $mail->Username   = 'username1@gmail.com';
+    $mail->Password   = 'password';
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('username1@gmail.com', 'Glo Academy'); // Адрес самой почты и имя отправителя
-    // Получатель письма
-    $mail->addAddress('username2@gmail.com'); // Ещё один, если нужен
-    // Прикрипление файлов к письму
-
-        // -----------------------
-        // Само письмо
-        // -----------------------
+    $mail->setFrom('username1@gmail.com', 'Glo Academy');
+    $mail->addAddress('username2@gmail.com');
         $mail->isHTML(true);
     
         $mail->Subject = 'Форма';
         $mail->Body    = "<b>Имя:</b> $userName <br>
         <b>Телефон:</b> $userPhone <br>
         <b>Электронная почта:</b> $userEmail <br>";
-// Проверяем отравленность сообщения
 if ($mail->send()) {
     header('Location: thanks.php');
 } else {
